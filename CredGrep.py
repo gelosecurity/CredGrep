@@ -47,13 +47,12 @@ def scan_for_secrets(path, verbose):
     return secrets
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Search for hardcoded secrets in an iOS app.")
+    parser = argparse.ArgumentParser(description="Search for hardcoded secrets in an app.")
     parser.add_argument("-v", "--verbose", action="store_true", help="Print verbose output.")
     args = parser.parse_args()
-    ipa_path = "."
-    secrets = scan_for_secrets(ipa_path, args.verbose)
+    app_path = "."
+    secrets = scan_for_secrets(app_path, args.verbose)
     if secrets:
         print("[\033[1;34mINFO\033[0m] \033[1mScan complete.\033[0m")
     else:
         print("[\033[1;34mINFO\033[0m] \033[1mNo hardcoded secrets found.\033[0m")
-
