@@ -1,5 +1,5 @@
 # CredGrep
-CredGrep is a Python script designed to search for hardcoded secrets in an app. This can be useful for detecting and removing sensitive information that may have been accidentally left in source code or configuration files.
+CredGrep is a Python script designed to search for hardcoded secrets in an app. This can be useful for detecting and removing sensitive information that may have been accidentally left in application directories.
 
 ## Usage
 To use CredGrep.py, simply run the script and provide the path to the app that you want to scan. For example:
